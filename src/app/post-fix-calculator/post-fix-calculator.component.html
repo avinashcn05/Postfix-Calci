@@ -1,0 +1,16 @@
+<div class="postfix">
+<h1>Postfix Calculator</h1>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width provide-width">
+    <input matInput name="expression2" 
+  [(ngModel)]="expression" class="input-box" type="text" id="input" placeholder="Post Fix Expression here 1 2 +" />
+
+  </mat-form-field>
+  <input mat-raised-button type="submit" class="submit" value="submit" (click)="getExpression()"/>
+  
+</form>
+
+</div>
+
+<app-result-component class="output-text"></app-result-component>
